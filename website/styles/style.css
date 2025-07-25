@@ -1,0 +1,86 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: antiquewhite;
+     color: red;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+/* Main body list */
+.menu_buttons {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 1rem;    
+}
+.menu_buttons button {
+     color: antiquewhite;
+     background-color: red
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     display: flex;
+
+}
+
+nav {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+}
+
+nav ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     list-style: none;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+}
+
+header nav ul li {
+     display: flex;
+     margin: 0.5rem; /* Add spacing between navigation buttons */
+}
+
+/* Spacing for main content list items */
+main ul li {
+     margin: 0.5rem 0; /* Add vertical spacing between main content buttons */
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
